@@ -7,7 +7,20 @@ import { Component, Input } from '@angular/core';
 })
 export class OrderProcessorComponent {
 
-  @Input() stockSymbol: string;
+  private _stockSymbol: string;
+
+  @Input()
+  set stockSymbol(value: string) {
+    this._stockSymbol = value;
+    if (this._stockSymbol != undefined ) {
+      console.log(`Sending a Buy order to NASDAQ: ${this.stockSymbol} ${this.quantity}`);
+    }
+  }
+
+  get stockSymbol(): string {
+    return this._stockSymbol;
+  }
+
   @Input() quantity: number;
 
 }

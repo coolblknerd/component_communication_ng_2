@@ -1,0 +1,7 @@
+<input type="text" placeholder="Enter stock (e.g. IBM)" (change)="onInputEvent($event)">
+<br>
+<order-processor [stockSymbol]="stock" quantity="100"></order-processor>
+<br>
+<price-quoter (lastPrice)="priceQuoteHandler($event)"></price-quoter>
+<br>
+AppComponent received: {{ stockSymbol }} {{ price | currency:'USD':true:'1.2-2'}}
