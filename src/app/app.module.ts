@@ -12,6 +12,8 @@ import { InputOutputComponent } from './components/input-output/input-output.com
 import { MediatorComponent } from './components/mediator/mediator.component';
 import { PriceQuoterMediatorComponent } from './components/price-quoter-mediator/price-quoter-mediator.component';
 import { OrderMediatorComponent } from './components/order-mediator/order-mediator.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 import { Routing } from './app.routes';
 
@@ -24,7 +26,9 @@ import { Routing } from './app.routes';
     InputOutputComponent,
     MediatorComponent,
     PriceQuoterMediatorComponent,
-    OrderMediatorComponent
+    OrderMediatorComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
