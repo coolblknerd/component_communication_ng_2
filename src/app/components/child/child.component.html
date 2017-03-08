@@ -1,6 +1,6 @@
 <div class="child">
   <h2>Child</h2>
-  <ng-content select=".header"></ng-content>
-  <div>This content is defined in child</div>
-  <ng-content select=".footer"></ng-content>
+  <div>Greeting: {{ greeting }}</div>
+  <div>User name: {{ user.name }}</div>
+  <div>Message: <input [(ngModel)]="message"></div>
 </div>

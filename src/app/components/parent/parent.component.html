@@ -1,8 +1,6 @@
 <div class="wrapper">
   <h2>Parent</h2>
-  <div>This div is defined in the Parent's template</div>
-    <child>
-      <div class="header">Child got this header from parent {{ todaysDate }}</div>
-      <div class="footer">Child got this footer from parent</div>
-    </child>
+  <div>Greeting: <input type="text" [value]="greeting" (change)="greeting = $event.target.value"></div>
+  <div>User name: <input type="text" [value]="user.name" (change)="user.name = $event.target.value"></div>
+  <child [greeting]="greeting" [user]="user"></child>
 </div>

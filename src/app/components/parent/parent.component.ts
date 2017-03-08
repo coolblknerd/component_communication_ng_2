@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, enableProdMode } from '@angular/core';
 
 @Component({
   selector: 'parent',
@@ -7,5 +7,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.Native
 })
 export class ParentComponent {
-  todaysDate: string = new Date().toLocaleDateString();
+  greeting: string = `Hello`;
+  user: { name: string } = { name: 'John' };
 }
+
+// enableProdMode();
