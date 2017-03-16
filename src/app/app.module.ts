@@ -14,6 +14,8 @@ import { PriceQuoterMediatorComponent } from './components/price-quoter-mediator
 import { OrderMediatorComponent } from './components/order-mediator/order-mediator.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { ParentAPIComponent } from './components/parent-api/parent-api.component';
+import { ChildAPIComponent } from './components/child-api/child-api.component';
 
 import { Routing } from './app.routes';
 
@@ -28,7 +30,9 @@ import { Routing } from './app.routes';
     PriceQuoterMediatorComponent,
     OrderMediatorComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ParentAPIComponent,
+    ChildAPIComponent
   ],
   imports: [
     BrowserModule,
